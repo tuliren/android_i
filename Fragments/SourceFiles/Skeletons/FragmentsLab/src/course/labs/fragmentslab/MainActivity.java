@@ -35,6 +35,7 @@ public class MainActivity extends Activity implements
 			// Otherwise, save a reference to the FeedFragment for later use
 			mFeedFragment = (FeedFragment) getFragmentManager()
 					.findFragmentById(R.id.feed_frag);
+
 		}
 
 	}
@@ -67,6 +68,7 @@ public class MainActivity extends Activity implements
       getFragmentManager()
           .beginTransaction()
           .replace(R.id.fragment_container, mFeedFragment)
+          .addToBackStack(null)
           .commit();
 
 			// execute transaction now
