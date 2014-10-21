@@ -17,8 +17,9 @@
             android:name=".MyBrowserActivity"
             android:label="@string/app_name" >
             <intent-filter>
+                <!-- this activity is the main entry point of the application -->
                 <action android:name="android.intent.action.MAIN" />
-
+                <!-- this application/activity should appear in the top-level launcher -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
   
